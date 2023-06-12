@@ -15,7 +15,7 @@ const pickedUpOdersRoutes = require('./routes/pickedUpOders');
 
 
 
-mongoose.connect('mongodb+srv://lalana:OJx2X4IllVNl9up4@cluster0-rjtww.mongodb.net/pharmacy?retryWrites=true&w=majority',{useNewUrlParser: true , useUnifiedTopology: true})
+mongoose.connect('mongodb://localhost:27017', {useNewUrlParser: true , useUnifiedTopology: true})
   .then(()=>{
     console.log('connected to database!');
   })
@@ -24,6 +24,7 @@ mongoose.connect('mongodb+srv://lalana:OJx2X4IllVNl9up4@cluster0-rjtww.mongodb.n
   });
   mongoose.set('useCreateIndex', true);
 
+  // mongodb+srv://alifianadexe:adexe123@cluster0.f9sxuv7.mongodb.net/
 //OJx2X4IllVNl9up4
 
 
